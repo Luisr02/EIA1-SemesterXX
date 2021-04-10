@@ -1,0 +1,83 @@
+.header {
+    background-color: rgb(89, 158, 214);
+    height: 500px;
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 400px;
+    text-align: center;
+    width: 800px;
+    margin:auto;
+    margin-top: -120px;
+}
+
+.background {
+    background-image: url(bg.png);
+    margin:auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#portfolioheadline {
+    padding-top: 100px;
+    color:  rgba(7, 7, 7, 0.774);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(7, 7, 7, 0.774);
+    font-size: 35px;
+}
+
+#portfolioname {
+    bottom: 200px;
+    padding-left: 150px;
+    color:rgba(7, 7, 7, 0.774);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+#oben {
+    color: rgba(7, 7, 7, 0.774);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#instalogo {
+    position: relative;
+    top: -50px;
+    right: 15px;
+}
+
+#Navigationsleiste {
+    overflow: hidden;
+    background-color:rgb(89, 158, 214);
+    margin-left: 555px;
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 0;
+    width: fit-content;
+}
+
+#active {
+    color:rgba(7, 7, 7, 0.774);
+}
+
+.Navipunkt {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.774);
+    height: 10px;
+    width: 10px;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 20px;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: rgb(223, 219, 219);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
