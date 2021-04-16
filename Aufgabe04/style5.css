@@ -1,0 +1,42 @@
+.background {
+    background-image: url(bg5.png);
+    margin:auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%)
+}
+
+h1 {
+    color: honeydew;
+    position: absolute;
+    left: 38%;
+    top: 35%;
+}
+
+.oben {
+    column-count:3;
+    column-gap: 40px;
+    width: 500px;
+    position: absolute;
+    left: 37%;
+    top: 47%;
+    text-align: center;
+    color: honeydew;
+}
+
+.unten {
+    column-count:2;
+    column-gap: 20px;
+    width: 400px;
+    position: absolute;
+    left: 39%;
+    top: 58%;
+    text-align: center;
+    color: honeydew;
+}

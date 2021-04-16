@@ -1,0 +1,77 @@
+.background {
+    background-image: url(bg.png);
+    margin:auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.muscheln {
+    position: absolute;
+    top: 67%;
+    left: 36%;
+}
+
+.pinguin {
+    position:absolute;
+    top: 60%;
+    right: 36%;
+}
+
+.willkommenin {
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 33%;
+    left: 39%;
+    color:honeydew
+}
+
+.furtwangen {
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 37%;
+    left: 39%;
+    color:honeydew
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color:honeydew;
+    position:absolute;
+    top: 47%;
+    left: 39%;
+}
+
+.text1 {
+    font-family: 'Times New Roman', Times, serif;
+    color:honeydew;
+    top: 51%;
+    left: 39%;
+}
+
+.text2 {
+    font-family: 'Times New Roman', Times, serif;
+    color:honeydew;
+    top: 53%;
+    left: 39%;
+}
+
+.text3 {
+    font-family: 'Times New Roman', Times, serif;
+    color:honeydew;
+    top: 55%;
+    left: 39%;
+}
+
+.text4 {
+    font-family: 'Times New Roman', Times, serif;
+    color:honeydew;
+    top: 57%;
+    left: 39%;
+}

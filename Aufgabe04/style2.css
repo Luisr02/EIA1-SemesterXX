@@ -1,0 +1,67 @@
+.background {
+    background-image: url(bg2.png);
+    margin:auto;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.muschel1 {
+    position: absolute;
+    background: url(muschel.png) no-repeat;
+    top: 60%;
+    left: 39%;
+    width: 130px;
+    height: 130px;
+}
+
+.muschel2 {
+    position: absolute;
+    background: url(muschel.png) no-repeat;
+    top: 50%;
+    left: 47%;
+    width: 130px;
+    height: 130px;
+}
+
+.muschel3 {
+    position: absolute;
+    background: url(muschel.png) no-repeat;
+    top: 55%;
+    left: 58%;
+    width: 130px;
+    height: 130px;
+}
+
+.text1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: honeydew;
+    position: absolute;
+    top: 32%;
+    left: 39%;
+}
+
+.text2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: honeydew;
+    position: absolute;
+    top: 35%;
+    left: 39%;
+}
+
+.muschel1:hover {
+    background: url(muschel_perle.png) no-repeat;
+}
+
+.muschel2:hover {
+    background: url(muschel_perle.png) no-repeat;
+}
+
+.muschel3:hover {
+    background: url(muschel_perle.png) no-repeat;
+}
