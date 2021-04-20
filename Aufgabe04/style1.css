@@ -1,27 +1,23 @@
-.background {
-    background-image: url(bg.png);
-    margin:auto;
-    max-width: 800px;
-    text-align: center;
-}
+body {background-image: url(bg.png);}
 
-img {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%,-50%)
+.Karte {
+    background-image: url(wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 300px;
 }
 
 .muscheln {
     position: absolute;
-    top: 67%;
-    left: 36%;
+    top: 63%;
+    left: 32%;
 }
 
 .pinguin {
     position:absolute;
     top: 60%;
-    right: 36%;
+    right: 32%;
 }
 
 .willkommenin {

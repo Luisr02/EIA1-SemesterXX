@@ -1,7 +1,11 @@
-.background {
-    background-image: url(bg2.png);
-    margin:auto;
-    text-align: center;
+body {background-image: url(bg2.png);}
+
+.Karte {
+    background-image: url(wrapperbg2.png);
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 300px;
 }
 
 img {
