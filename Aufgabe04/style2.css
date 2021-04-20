@@ -8,18 +8,11 @@ body {background-image: url(bg2.png);}
     margin-top: 300px;
 }
 
-img {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%,-50%)
-}
-
 .muschel1 {
     position: absolute;
     background: url(muschel.png) no-repeat;
-    top: 60%;
-    left: 39%;
+    margin-top: 280px;
+    margin-left: 80px;
     width: 130px;
     height: 130px;
 }
@@ -27,8 +20,8 @@ img {
 .muschel2 {
     position: absolute;
     background: url(muschel.png) no-repeat;
-    top: 50%;
-    left: 47%;
+    margin-top: 180px;
+    margin-left: 250px;
     width: 130px;
     height: 130px;
 }
@@ -36,8 +29,8 @@ img {
 .muschel3 {
     position: absolute;
     background: url(muschel.png) no-repeat;
-    top: 55%;
-    left: 58%;
+    margin-top: 230px;
+    margin-left: 450px;
     width: 130px;
     height: 130px;
 }
@@ -46,16 +39,16 @@ img {
     font-family: 'Times New Roman', Times, serif;
     color: honeydew;
     position: absolute;
-    top: 32%;
-    left: 39%;
+    margin-top: 50px;
+    margin-left: 110px;
 }
 
 .text2 {
     font-family: 'Times New Roman', Times, serif;
     color: honeydew;
     position: absolute;
-    top: 35%;
-    left: 39%;
+    margin-top: 80px;
+    margin-left: 110px;
 }
 
 .muschel1:hover {

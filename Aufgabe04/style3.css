@@ -8,26 +8,19 @@ body {background-image: url(bg3.png);}
     margin-top: 300px;
 }
 
-img {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%,-50%)
-}
-
 h1 {
     font-family: jellyka_delicious_cakeregular;
     color: honeydew;
     position: absolute;
-    top: 32%;
-    left: 40%;
+    margin-top: 50px;
+    margin-left: 110px;
 }
 
 p {
     font-family: jellyka_delicious_cakeregular;
     color: honeydew;
     position: absolute;
-    top: 47%;
-    left: 38%;
+    margin-top: 175px;
+    margin-left: 110px;
     font-size: 20px;
 }

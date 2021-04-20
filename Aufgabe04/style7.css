@@ -8,23 +8,16 @@ body {background-image: url(bg7.png);}
     margin-top: 150px;
 }
 
-img {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%,-50%)
-}
-
 iframe {
     position:absolute;
-    top: 25%;
-    left: 39%;
+    margin-top: 75px;
+    margin-left: 75px;
     z-index: 1;
 }
 
 .band {
     position: absolute;
-    left: 55%;
-    top: 45%;
+    margin-left: 250px;
+    margin-top: 200px;
     z-index: 2;
 }
