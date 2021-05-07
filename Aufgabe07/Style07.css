@@ -192,4 +192,5 @@ body {
     position: absolute;
     bottom: -150px;
     left: 165px;
+    cursor: pointer;
 }
