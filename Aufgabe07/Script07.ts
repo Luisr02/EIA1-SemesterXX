@@ -1,5 +1,5 @@
 // Array mit verschieden Beats
-var differentBeats = [
+var differentBeats : any = [
     new Audio("assets/A.mp3"), 
     new Audio("assets/C.mp3"), 
     new Audio("assets/F.mp3"), 
