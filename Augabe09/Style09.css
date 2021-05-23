@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3e75b3;
+    height: 350px;
+    width: 570px;
+    position: absolute;
+    margin: auto;
+    top: 70px;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-left: 180px;
+    padding-bottom: 20px;
+}
+
+#addTask {
+    position: relative;
+    padding: 30px 15px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+#addTask input {
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+
+}
+
+#addTask button {
+    position: relative;
+    float: right;
+    width: 70px;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    background: #3e75b3;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    position: relative;
+    width: 565px;
+    background: white;
+    list-style-type: none;
+    margin: 0.1em 0em 0.1em 0em;
+    padding: 10px 10px 10px 45px;
+    font-size: 1.4em;
+    border-radius: 15px;
+}
+
+ul li.done {
+    background: lightgrey;
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li i.fa-check-circle {
+    float: left;
+    margin-left: -1.3em;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: grey;
+}
+
+ul li i.fa-circle {
+    float: left;
+    margin-left: -1.3em;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: lightgrey;
+}
+
+ul li i.fa-trash-alt {
+    float: right;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: rgb(63, 61, 61);
+    opacity: 30%;
+}
+
+ul li:hover {
+    background: rgb(235, 235, 235);
+}
+
+i.fa-plus-circle {
+    position: absolute;
+    margin-top: 0.45em;
+    margin-left: 0.2em;
+    font-size: 1.9em;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.checkIcon {
+    color: black;
+    font-size: 40px;
+}
+
+.deleteIcon {
+    color: black;
+    font-size: 40px;
+}
+
+
+
+
