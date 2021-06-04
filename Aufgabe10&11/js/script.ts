@@ -11,7 +11,51 @@ var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
+var counterOpenDOMElement: HTMLElement;
+var counterDoneDOMElement: HTMLElement;
 
+declare var Artyom: any;
+
+window.addEventListener("load", function(): void {
+    const artyom: any = new Artyom();
+    
+    function startContinuousArtyom(): void {
+        artyom.fatality();
+    
+        setTimeout(
+            function(): void {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function(): void {
+                    console.log("Ready!");
+                });
+            }, 
+            250);
+    }
+    
+    startContinuousArtyom();
+
+    artyom.addCommands({
+        indexes: ["erstelle Aufgabe *"],
+        smart: true,
+        action: function(i: any, wildcard: string): void {
+          todoArray.unshift({
+              todosText: wildcard,
+              todosChecked: false
+          });
+          drawListToDOM();
+            console.log("Neue Aufgabe wird erstellt: " + wildcard);
+            artyom.say("Deine Aufgabe" + wildcard + " wurde ergänzt");
+        }
+    });
+    document.querySelector("#SprachEingabe").addEventListener("click", function (): void {
+        artyom.say("Spracheingabe ist aktiviert");
+        startContinuousArtyom();
+});
 
 window.addEventListener("load", function(): void {
 
@@ -19,6 +63,8 @@ window.addEventListener("load", function(): void {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    counterOpenDOMElement = document.querySelector("#counterOpen");
+    counterDoneDOMElement = document.querySelector("#counterDone");
 
     addButtonDOMElement.addEventListener("click", addTodo);
 
@@ -46,10 +92,30 @@ function drawListToDOM(): void {
     }
 
     updateCounter();
+    updateCounterOpen();
+    updateCounterDone();
 }
 
 function updateCounter(): void {
     counterDOMElement.innerHTML = todoArray.length + " in total";
+}
+
+function updateCounterOpen(): void {
+    var open: number = 0;
+    for (var index: number = 0; index < todoArray.length; index++) {
+        if (todoArray[index].todosChecked == false)
+        open++;
+    }
+    counterOpenDOMElement.innerHTML = open + " tasks open";
+}
+
+function updateCounterDone(): void {
+    var done: number = 0;
+    for (var index: number = 0; index < todoArray.length; index++) {
+        if (todoArray[index].todosChecked == true)
+        done++;
+    }
+    counterDoneDOMElement.innerHTML = done + " tasks done";
 }
 
 function addTodo(): void {
@@ -78,3 +144,4 @@ function deleteTodo(index: number): void {
     todoArray.splice(index, 1);
     drawListToDOM();
 }
+})

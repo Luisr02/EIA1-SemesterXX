@@ -85,3 +85,14 @@ main {
 .trash:hover {
     color: black;
 }
+
+#counter {
+    color:rgb(0, 0, 0);
+}
+
+#SprachEingabe {
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
