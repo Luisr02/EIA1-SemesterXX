@@ -6,6 +6,14 @@ var counterDOMElement;
 var counterOpenDOMElement;
 var counterDoneDOMElement;
 window.addEventListener("load", function () {
+    inputDOMElement = document.querySelector("#inputTodo");
+    addButtonDOMElement = document.querySelector("#addButton");
+    todosDOMElement = document.querySelector("#todos");
+    counterDOMElement = document.querySelector("#counter");
+    counterOpenDOMElement = document.querySelector("#counterOpen");
+    counterDoneDOMElement = document.querySelector("#counterDone");
+    addButtonDOMElement.addEventListener("click", addTodo);
+    drawListToDOM();
     var artyom = new Artyom();
     function startContinuousArtyom() {
         artyom.fatality();
@@ -38,16 +46,6 @@ window.addEventListener("load", function () {
     document.querySelector("#SprachEingabe").addEventListener("click", function () {
         artyom.say("Spracheingabe ist aktiviert");
         startContinuousArtyom();
-    });
-    window.addEventListener("load", function () {
-        inputDOMElement = document.querySelector("#inputTodo");
-        addButtonDOMElement = document.querySelector("#addButton");
-        todosDOMElement = document.querySelector("#todos");
-        counterDOMElement = document.querySelector("#counter");
-        counterOpenDOMElement = document.querySelector("#counterOpen");
-        counterDoneDOMElement = document.querySelector("#counterDone");
-        addButtonDOMElement.addEventListener("click", addTodo);
-        drawListToDOM();
     });
     function drawListToDOM() {
         todosDOMElement.innerHTML = "";

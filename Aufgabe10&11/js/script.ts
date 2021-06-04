@@ -17,6 +17,18 @@ var counterDoneDOMElement: HTMLElement;
 declare var Artyom: any;
 
 window.addEventListener("load", function(): void {
+    
+    inputDOMElement = document.querySelector("#inputTodo");
+    addButtonDOMElement = document.querySelector("#addButton");
+    todosDOMElement = document.querySelector("#todos");
+    counterDOMElement = document.querySelector("#counter");
+    counterOpenDOMElement = document.querySelector("#counterOpen");
+    counterDoneDOMElement = document.querySelector("#counterDone");
+
+    addButtonDOMElement.addEventListener("click", addTodo);
+
+    drawListToDOM();
+    
     const artyom: any = new Artyom();
     
     function startContinuousArtyom(): void {
@@ -55,20 +67,6 @@ window.addEventListener("load", function(): void {
     document.querySelector("#SprachEingabe").addEventListener("click", function (): void {
         artyom.say("Spracheingabe ist aktiviert");
         startContinuousArtyom();
-});
-
-window.addEventListener("load", function(): void {
-
-    inputDOMElement = document.querySelector("#inputTodo");
-    addButtonDOMElement = document.querySelector("#addButton");
-    todosDOMElement = document.querySelector("#todos");
-    counterDOMElement = document.querySelector("#counter");
-    counterOpenDOMElement = document.querySelector("#counterOpen");
-    counterDoneDOMElement = document.querySelector("#counterDone");
-
-    addButtonDOMElement.addEventListener("click", addTodo);
-
-    drawListToDOM();
 });
 
 function drawListToDOM(): void {
